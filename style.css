@@ -1,0 +1,243 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  background: url(./img/abstract-geometric-wireframe-background_52683-59421.avif);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.allpage{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 10%;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  width: 100%;
+  padding: 10px;
+  height: fit-content;
+}
+
+.nav-ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  width: 40%;
+  justify-content: space-around;
+}
+h3 {
+  color: #111111;
+  font-size: 1.2rem;
+}
+.nav-ul li {
+  padding: 10px;
+}
+.nav-ul li a {
+  color: #002950;
+  font-weight: bold;
+  font-size: 16px;
+}
+.nav-ul li a:hover {
+  opacity: 0.7;
+  color: #111111;
+}
+#create-btn,
+#login-btn {
+  background-color: #4267b2;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  padding: 7px;
+  cursor: pointer;
+  font-weight: bold;
+}
+#create-btn:hover,
+#login-btn:hover,
+#create-new-btn:hover {
+  background-color: rgb(255, 255, 255);
+  color: #4267b2;
+}
+.img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: none;
+}
+.bar {
+  display: none;
+}
+.x {
+  display: none;
+}
+.hidden-ul {
+  display: none;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  list-style: none;
+  top: 9%;
+  width: 100%;
+  padding: 10px;
+}
+.hidden-ul li {
+  padding: 35px 10px;
+}
+.hidden-ul li a {
+  color: rgb(54, 35, 71);
+  font-weight: bold;
+}
+.hidden-ul li a:hover {
+  opacity: 0.5;
+}
+#create-new-btn {
+  margin-bottom: 35px;
+  background-color: #4267b2;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  display: none;
+}
+#top,
+#down {
+  display: none;
+  position: absolute;
+  right: 51.5%;
+  top: 8%;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+}
+#down {
+  display: none;
+}
+
+
+main {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  align-items: start;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.my {
+  margin-top: 50px;
+  width: 69%;
+  cursor: pointer;
+  height: 40vh;
+  background-color: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.my:hover{
+  box-shadow: 0 0 6px 2px rgb(114, 116, 114);
+}
+.one {
+  width: 29%;
+  margin-left: 10px;
+}
+.my-img{
+  width: 100%;
+  height:80%;
+
+}
+.my-p{
+  width: 100%;
+  padding: 5px 10px;
+}
+footer {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  margin: 20px 0px;
+}
+footer ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 10px 30px;
+}
+footer ul li a img {
+  width:25px;
+  height: 25px;
+}
+footer ul li a img:hover{
+  width:30px;
+  height: 30px;
+}
+.Feadback{
+  margin-bottom: 50px;
+}
+.Feadback label{
+font-weight: bold;
+}
+#recive{
+  display: none;
+margin-left: 120px;
+margin-top: 50px;
+font-weight: bold;
+}
+.Feadback button{
+  padding: 5px;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 3px;
+
+}
+#user-Feadback{
+  border: none;
+  padding: 5px;
+  outline: none;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 811px) {
+  h3 {
+    font-size: 1rem;
+  }
+  .nav-ul,
+  .buttons {
+    display: none;
+  }
+  .img {
+    display: block;
+  }
+  .x {
+    display: none;
+  }
+
+  #create-new-btn {
+    display: block;
+  }
+  #top,
+  #down {
+    display: none !important;
+  }
+
+}
